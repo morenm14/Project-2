@@ -1,0 +1,134 @@
+/* main style */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    padding: 0 30px;
+    color: #efefef;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #000000;
+}
+
+header .header-title{
+    display: inline-block;
+}
+
+header .header-menu{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #777777;
+    font-size: smaller;
+}
+
+#hero img{
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+main{
+    flex: 1;
+}
+
+main #menu-container{
+    padding: 0 30px;
+}
+
+.menu-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #dddddd;
+   
+}
+
+.item-image{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    max-height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.item-image img{
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+}
+
+h2.menu-item-name{
+   margin-bottom: 10px; 
+   color: #2d2d2d;
+   cursor: pointer;
+}
+.item-name-description{
+    width: 50%;
+}
+.menu-item-description{
+    display: none;
+    margin-top: 0px;
+    padding-top: 0px;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 21px;
+}
+.menu-item-description.visible{
+    display: block;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.price, .calories, .vegan{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.price{
+    margin-right: 1em;
+    color: rgb(41, 103, 197);
+}
+.calories{
+    margin-right: 1em;
+    color: rgb(197, 143, 41);
+}
+.price::before{
+    content: '$';
+}
+.calories::after{
+    content: ' calories';
+}
+
+.vegan.visible{
+    display: block;
+}
+
+.vegan {
+    
+    color: rgb(2, 88, 38);
+    
+}
+
+#footer-main{
+    padding: 5px 30px;
+    font-size: 14px;
+    background-color: rgb(223, 221, 221);
+}
